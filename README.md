@@ -4,7 +4,7 @@
 
 # Hello Python
 
-##Excercises of Python
+Excercises of Python
 
 
 
