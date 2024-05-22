@@ -1,4 +1,5 @@
 #crear una lista de usuarios con nombre telefono y edad
+
 users_list =[
     {"nombre": "Pedro", "apellido": "Perez","edad":30, "telefono": "12345678"},
     {"nombre": "Juan", "apellido": "Lopez","edad":28, "telefono": "87654321"},
@@ -7,6 +8,7 @@ users_list =[
  ]
 
 print(users_list)
+
 print(type(users_list))
 
 print(users_list[1])

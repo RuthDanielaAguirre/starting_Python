@@ -9,6 +9,7 @@ myFavoriteFruitDictionary = {
 print(myFavoriteFruitDictionary)
 print(type(myFavoriteFruitDictionary))
 
+
 #It can also be accessed by position by using the key instead of the position.
 
 print(myFavoriteFruitDictionary["manzana"])
