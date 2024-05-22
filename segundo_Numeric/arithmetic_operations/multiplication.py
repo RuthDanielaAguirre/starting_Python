@@ -13,4 +13,5 @@ print(4.3*float("3.1"))
 #multiplying variables
 a=2
 b=int("2")
+
 print(a*b)
