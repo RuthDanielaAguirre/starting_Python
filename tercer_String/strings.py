@@ -1,3 +1,5 @@
+#strings are a collection of characters inside a single variable.
+
 myString = "This is my string."
 print(myString)
 
