@@ -7,6 +7,9 @@
 import csv
 import copy
 
+#import csv importa la libreria csv que nos permite trabajar con archivos csv "comma-separated values".
+#import copy importa la libreria copy que nos permite hacer copias de diccionarios.
+
 myVehicle = {
     "vin" : "<empty>",
     "make" : "<empty>",
@@ -40,10 +43,18 @@ myInventoryList = []
 with open('car_fleet.csv') as csvFile:
     csvReader = csv.reader(csvFile, delimiter=',')  
     lineCount = 0  
+
+#"for row in csvReader:" iterates through each row in the csv file.
+#"if lineCount == 0" checks if the first line is the header.
+#it it si "print(f'Column names are: {", ".join(row)}')" prints the header. Otherwise, it prints the row. "lineCount += 1" increments the line count.
+
     for row in csvReader:
         if lineCount == 0:
             print(f'Column names are: {", ".join(row)}')  
             lineCount += 1  
+
+#"currentVehicle = copy.deepcopy(myVehicle)" createsa deep copy to storage all the data
+
         else:  
             print(f'vin: {row[0]} make: {row[1]}, model: {row[2]}, year: {row[3]}, range: {row[4]}, topSpeed: {row[5]}, zeroSixty: {row[6]}, mileage: {row[7]}')  
             currentVehicle = copy.deepcopy(myVehicle)  
@@ -59,6 +70,10 @@ with open('car_fleet.csv') as csvFile:
             lineCount += 1  
     print(f'Processed {lineCount} lines.')
     
+#"for myCarProperties in myInventoryList" iterates through each dictionary in the list.
+
+#for key, value in myCarProperties.items()" iterates through each key and value in the dictionary.
+
     for myCarProperties in myInventoryList:
       for key, value in myCarProperties.items():
         print("{} : {}".format(key,value))
