@@ -27,5 +27,4 @@ for key, value in myVehicle.items():
     print("{} : {}".format(key,value))
 
 
-
 myInventoryList = []
