@@ -12,3 +12,7 @@ print(myFruitList[:4])
 print(myFruitList[-1])
 
 print(myFruitList[2:])
+
+myFruitList[2] = "pineapple"
+
+print(myFruitList)
