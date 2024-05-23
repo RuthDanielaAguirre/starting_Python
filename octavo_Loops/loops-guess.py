@@ -1,5 +1,6 @@
 #A loop is a segment of code that repeats.
 # while | for
+#the indentation is very important in loops
 
 #"while" loop makes a section of code execute until a certain condition is met.
 
